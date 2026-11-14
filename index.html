@@ -1,31 +1,73 @@
-<div class="gallery">
 
-    <img src="images/ho-guom.png"
-         alt="Hồ Gươm – Tháp Rùa"
-         onmouseover="update(this)" onmouseleave="undo()">
+<!DOCTYPE html>
+<html lang="vi">
 
-    <img src="images/lang-bac.png"
-         alt="Lăng Chủ tịch Hồ Chí Minh"
-         onmouseover="update(this)" onmouseleave="undo()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Hà Nội</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <img src="images/van-mieu.png"
-         alt="Văn Miếu – Quốc Tử Giám"
-         onmouseover="update(this)" onmouseleave="undo()">
+<body onload="addTabFocus()">
 
-    <img src="images/chua-mot-cot.png"
-         alt="Chùa Một Cột"
-         onmouseover="update(this)" onmouseleave="undo()">
+    <h1>KHÁM PHÁ HÀ NỘI</h1>
 
-    <img src="images/cau-long-bien.png"
-         alt="Cầu Long Biên"
-         onmouseover="update(this)" onmouseleave="undo()">
+    <p>
+        Di chuột hoặc sử dụng phím Tab để chọn hình ảnh.
+    </p>
 
-    <img src="images/nha-tho-lon.png"
-         alt="Nhà thờ Lớn Hà Nội"
-         onmouseover="update(this)" onmouseleave="undo()">
+    <div id="image">
+        Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
 
-    <img src="images/ho-tay.png"
-         alt="Hồ Tây"
-         onmouseover="update(this)" onmouseleave="undo()">
+    <div class="gallery">
 
-</div>
+        <img src="images/ho-guom.png"
+             alt="Hồ Gươm – Tháp Rùa"
+             onmouseover="update(this)"
+             onmouseleave="undo()"
+             onfocus="update(this)"
+             onblur="undo()">
+
+        <img src="images/lang-bac.png"
+             alt="Lăng Chủ tịch Hồ Chí Minh"
+             onmouseover="update(this)"
+             onmouseleave="undo()"
+             onfocus="update(this)"
+             onblur="undo()">
+
+        <img src="images/van-mieu.png"
+             alt="Văn Miếu – Quốc Tử Giám"
+             onmouseover="update(this)"
+             onmouseleave="undo()"
+             onfocus="update(this)"
+             onblur="undo()">
+
+        <img src="images/chua-mot-cot.png"
+             alt="Chùa Một Cột"
+             onmouseover="update(this)"
+             onmouseleave="undo()"
+             onfocus="update(this)"
+             onblur="undo()">
+
+        <img src="images/cau-long-bien.png"
+             alt="Cầu Long Biên"
+             onmouseover="update(this)"
+             onmouseleave="undo()"
+             onfocus="update(this)"
+             onblur="undo()">
+
+        <img src="images/nha-tho-lon.png"
+             alt="Nhà thờ Lớn Hà Nội"
+             onmouseover="update(this)"
+             onmouseleave="undo()"
+             onfocus="update(this)"
+             onblur="undo()">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
