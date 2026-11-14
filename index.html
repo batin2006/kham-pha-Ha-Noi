@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Hà Nội</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>KHÁM PHÁ HÀ NỘI</h1>
+    <p>Di chuột qua một hình ảnh bên dưới để xem địa danh Hà Nội.</p>
+
+    <!-- Khu vực hiển thị hình ảnh -->
+    <div id="image">
+        Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <!-- Danh sách 7 hình ảnh -->
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=500"
+             alt="Hồ Gươm – Tháp Rùa"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=500"
+             alt="Lăng Chủ tịch Hồ Chí Minh"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+        <img src="https://images.unsplash.com/photo-1552550018-5253c1b171e1?w=500"
+             alt="Văn Miếu – Quốc Tử Giám"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+        <img src="https://images.unsplash.com/photo-1562602833-0f4ab2fc46e3?w=500"
+             alt="Chùa Một Cột"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=500"
+             alt="Cầu Long Biên"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=500"
+             alt="Nhà thờ Lớn Hà Nội"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500"
+             alt="Hồ Tây"
+             onmouseover="update(this)"
+             onmouseleave="undo()">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
