@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -15,14 +16,12 @@ p {
     font-size: 16px;
 }
 
-/* Khu vực xem trước */
 #image {
     width: 80%;
     height: 350px;
     margin: 20px auto;
     border: 3px solid #8b2e2e;
     border-radius: 10px;
-
     background-color: #ddd;
     background-image: url("");
     background-size: cover;
@@ -35,34 +34,46 @@ p {
 
     font-size: 20px;
     color: #333;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-/* Khu vực chứa 7 hình ảnh */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     max-width: 1000px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .gallery img {
     width: 100%;
-    height: 160px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
 .gallery img:hover {
-    border: 2px solid #8b2e2e;
+    border-color: #8b2e2e;
     transform: scale(1.03);
 }
 
-/* Hiển thị trên điện thoại */
+/* Hiển thị rõ ảnh đang được chọn bằng bàn phím */
+.gallery img:focus {
+    outline: 4px solid #d18b24;
+    outline-offset: 3px;
+}
+
 @media (max-width: 600px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #image {
+        width: 95%;
+        height: 250px;
+    }
 }
+
